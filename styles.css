@@ -227,10 +227,14 @@ h1, h2, h3, p { margin-top: 0; }
   .dashboard-title-row { margin: 22px 0 15px; }
   .dashboard-title-row h3 { font-size: 21px; }
   .dashboard-status { font-size: 6px; }
-  .dashboard-kpis > div { padding: 10px 7px 8px; gap: 7px; }
-  .dashboard-kpis > div > span { font-size: 5px; white-space: normal; min-height: 18px; }
-  .dashboard-kpis strong { font-size: clamp(18px, 6vw, 25px); }
-  .dashboard-kpis small { font-size: 5px; }
+  .dashboard-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dashboard-kpis > div { min-width: 0; padding: 11px 10px 9px; gap: 7px; border-bottom: 1px solid var(--line); }
+  .dashboard-kpis > div:nth-child(odd) { border-right: 1px solid var(--line); }
+  .dashboard-kpis > div:nth-child(even) { border-right: 0; }
+  .dashboard-kpis > div:nth-last-child(-n+2) { border-bottom: 0; }
+  .dashboard-kpis > div > span { font-size: 7px; white-space: normal; min-height: 0; }
+  .dashboard-kpis strong { font-size: clamp(20px, 7vw, 27px); }
+  .dashboard-kpis small { font-size: 6px; }
   .dashboard-chart { margin-top: 17px; }
   .chart-heading { align-items: flex-start; font-size: 6px; }
   .chart-heading > span:last-child { flex-wrap: wrap; justify-content: flex-end; font-size: 5px; max-width: 130px; }
