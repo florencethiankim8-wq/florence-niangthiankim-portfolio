@@ -142,6 +142,14 @@ h1, h2, h3, p { margin-top: 0; }
 .dashboard-download { display: inline-flex; align-items: center; gap: 26px; margin-top: 19px; padding: 13px 16px; background: var(--acid); color: var(--ink); font: 9px var(--mono); letter-spacing: .07em; transition: background .2s ease, transform .2s ease; }
 .dashboard-download:hover { background: #e1ff83; transform: translateY(-2px); }
 .dashboard-download span { font-size: 15px; }
+.solfa-preview { min-height: 290px; padding: 48px 7%; display: flex; align-items: center; justify-content: center; gap: 5%; background: radial-gradient(ellipse at 70% 45%, #30473a 0, #1c2a22 38%, #141613 100%); color: var(--paper); }
+.solfa-clef { color: var(--acid); font: 100px/1 "Segoe UI Symbol", "Noto Music", serif; }
+.solfa-preview-title { font-size: clamp(48px, 8vw, 94px); font-weight: 500; line-height: .8; letter-spacing: -.09em; }
+.solfa-preview-title i { color: var(--acid); font-family: Georgia, serif; font-weight: 400; }
+.solfa-preview-notes { position: absolute; left: 7%; bottom: 25px; color: #a3a69d; font: 8px var(--mono); letter-spacing: .08em; }
+.solfa-preview-action { position: absolute; top: 18px; right: 20px; display: flex; align-items: center; gap: 12px; color: var(--acid); font: 8px var(--mono); letter-spacing: .08em; }
+.solfa-preview-action span { font-size: 15px; }
+.solfa-preview:hover .solfa-preview-action { color: var(--paper); }
 .resume-extras { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; margin-top: 34px; padding-top: 20px; border-top: 1px solid rgba(23,25,20,.2); }
 .resume-extras h3 { margin: 11px 0 6px; font-size: 16px; line-height: 1.35; font-weight: 500; letter-spacing: -.035em; }
 .resume-extras p { margin: 0; max-width: 420px; font-size: 10px; line-height: 1.75; opacity: .76; }
